@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Week 4 HW</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <style>
+        .filmgallery {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin-left: 10%;
+            margin-right: 10%;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo {
+            max-width: 200px; /* Ensure the photo doesn't exceed its container */
+            height: auto; /* Allow the height to adjust according to the width */
+        }
+
+        .bio {
+            font-family: Arial, sans-serif;
+            color: rgb(141, 147, 90);
+        }
+    </style>
+</head>
+
+
+
+
+
+    <body>
+        
+        <center><h1>Cat Song</h1></center>
+
+        <!-- Gallery Section 1 -->
+        <div class="filmgallery">
+            <div><img src="film-1.png" alt="Mitsuki" width="200px"></div>
+            <div><img src="film-2.png" alt="Picnic" width="200px"></div>
+            <div><img src="film-3.png" alt="In-Uh" width="200px"></div>
+        </div>
+
+
+        <!-- CSS BIO -->
+        <div class="container">
+            <img src="portrait-image.jpg" alt="Profile Photo" class="photo">
+            <div class="bio">
+              <p>Hi, my name is Cat, and I am a story artist. Above are screenshots of my films, and below are fanart that I draw in my free time.</p>
+            </div>
+        </div>
+        
+        
+        <!-- Gallery Section 2 -->
+        <div class="row">
+            <div class="column" style="flex-grow: 1;">
+                <img src="chainsawman.jpeg"  alt="Denji" style="width: 100%">
+                <img src="botw.jpeg" alt="Link" style="width: 100%">
+                <img src="garbagetime.png" alt="Point Guard" style="width: 100%">
+            </div>
+
+            <div class="column" style="flex-grow: 4;">
+                <img src="trigun-1.png" alt="portrait" style="width: 100%">
+                <img src="trigun-2.png" alt="poses" style="width: 100%">
+            </div>
+
+            <div class="column" style="flex-grow: 1;">
+                <img src="fma.jpeg" alt="fma" style="width: 100%">
+                <img src="miu404-1.png" alt="Ibuki" style="width: 100%">
+                <img src="miu404-2.png" alt="Aibo" style="width: 100%">
+            </div>
+
+          </div>
+        
+        <script src="" async defer></script>
+    </body>
+
+
+
+
+</html>
